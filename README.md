@@ -12,13 +12,17 @@ This simple tool is made to unpack/repack Android ROM (8.1+) on linux :)
 - A Linux Machine
 - Make sure those package is installed in your machine :
 
+```
 p7zip-full python3
+```
 
 ===================================================================
 
 # Usage :
 
+```
 $ ./ur.sh <unpack/repack> <target-zip/dir> <outname-dir/zip>
+```
 
 - unpack/repack : -u for Unpack , -r for Repack
 - target-zip/dir : Target ZIP file/path for unpack,  DIR Project name for Repack
@@ -30,13 +34,17 @@ $ ./ur.sh <unpack/repack> <target-zip/dir> <outname-dir/zip>
 
 1. for Unpack :
 
+```
 $ ./ur.sh -u miui_LAVENDER_9.7.25_a70f3c63fa_9.0.zip miui
+```
 
 * unpacked ZIP will be generated in out/miui
 
 2. for Repack :
 
+```
 $ ./ur.sh -r miui miui_LAVENDER_9.7.25_a70f3c63fa_9.0_repack.zip
+```
 
 * repacked out/miui will generated in out/<customzipname>.zip
 
