@@ -20,11 +20,11 @@ p7zip-full python3
 
 $ ./ur.sh <unpack/repack> <target-zip/dir> <outname-dir/zip>
 
-unpack/repack : -u for Unpack , -r for Repack
-target-zip/dir : Target ZIP file/path for unpack,  DIR Project name for Repack
-outname-dir/zip : Custom Project DIR name for unpack, Output Custom ZIP name for repack
+- unpack/repack : -u for Unpack , -r for Repack
+- target-zip/dir : Target ZIP file/path for unpack,  DIR Project name for Repack
+- outname-dir/zip : Custom Project DIR name for unpack, Output Custom ZIP name for repack
 
-Supported ROM : Aonly ROM Type (META-INF+*.new.dat/.br)
+* Supported ROM : Aonly ROM Type (META-INF+*.new.dat/.br)
 
 # Example of Usage :
 
