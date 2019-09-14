@@ -12,7 +12,7 @@ script_codename=ilopyou
 BUILD_START=$(date +"%s")
 FungTion=unknown
 toolsdir="$locdir/tools"
-brotli="$toolsdir/brotli"
+brotli_legacy="$toolsdir/brotli"
 simg2img="$toolsdir/simg2img"
 img2simg="$toolsdir/img2simg"
 sdat2img="$toolsdir/sdat2img.py"
@@ -73,7 +73,7 @@ extract_rom() {
             fi
             if [[ $(echo "$i" | grep "\.dat\.br") ]]; then
                 echo "Decompressing brotli $i file"
-                $brotli -d "$i"
+                brotli -d "$i"
                 echo "$i" >> $romdata/br_list.txt
                 rm -f "$i"
             fi
@@ -110,7 +110,7 @@ repack_rom() {
 		            	isMatch=$(cat $romdata/br_list.txt|grep $outimg)
 		            	if [ "$isMatch" != "" ]; then
 		            		echo "Compressing $output to brotli..."
-		            		$brotli --quality=6 $outimg.new.dat
+		            		brotli --quality=6 $outimg.new.dat
 		            		rm -rf $outimg.new.dat
 		            	fi
 		            fi

@@ -13,7 +13,7 @@ This simple tool is made to unpack/repack Android ROM (8.1+) on linux :)
 - Make sure those package is installed in your machine :
 
 ```
-p7zip-full python3
+p7zip-full python3 brotli
 ```
 
 ===================================================================
